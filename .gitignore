@@ -1,0 +1,94 @@
+############################################
+# Environment variables (sensitive data)
+############################################
+.env*
+!.env.example
+
+############################################
+# Build / compiled output
+############################################
+dist/
+_dist/
+coverage/
+coverage.env.development/
+.nyc_output/
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+############################################
+# Node / package managers
+############################################
+node_modules/
+.yarn/
+.yalc/
+yalc.lock
+
+############################################
+# Logs
+############################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+############################################
+# OS files
+############################################
+.DS_Store
+
+############################################
+# IDEs / Editors
+############################################
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+workspace.code-workspace
+
+############################################
+# Assets / generated browser bundles
+############################################
+assets/appBrowser/
+!assets/appBrowser/index.html
+
+assets/general/sitemap*
+
+############################################
+# Archives / backups / sessions
+############################################
+archive/
+__archive__/
+cdkYourailsAcademy/mongoDbBackups/
+
+############################################
+# Project-specific outputs
+############################################
+cdkYourailsAcademy/output/
+cdkJobVsResume/__cURLGetLin__/
+
+############################################
+# Misc project files to ignore
+############################################
+seo-research
+certificates/
+*.png
+*.wav
+        
+
+############################################
+# working folders
+############################################
+**/__output__/
+**/__credentials__/
+__sessions__/

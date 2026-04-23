@@ -1,0 +1,150 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "github.copilot.enable": {
+      "*": false, // disable Copilot everywhere
+    },
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false,
+    },
+    "editor.inlineSuggest.enabled": false,
+    "git-graph.openNewTabEditorGroup": "One",
+    "editor.accessibilitySupport": "off",
+    "folder-size.ignoreFolders": "node_modules|.git",
+    "grammarly.files.include": [
+      "**/readme.md",
+      "**/*.txt",
+      // "**/*.ts"
+    ],
+    "grammarly.files.exclude": [
+      "**/README.md",
+      "/Users/admin/Dev/archive.txt"
+    ],
+    "colorize.languages": [
+      "javascript",
+      "typescript"
+    ],
+    "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.find.autoFindInSelection": "always",
+    "editor.folding": true,
+    "editor.foldingStrategy": "indentation",
+    "editor.fontLigatures": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.largeFileOptimizations": false,
+    "editor.renderWhitespace": "all",
+    "editor.showFoldingControls": "always",
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "off",
+    "files.associations": {
+      "*.svg": "html",
+      "*.xml": "html",
+    },
+    "files.autoSave": "off",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.factorypath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/node_modules": false,
+    },
+    "git.autofetch": true,
+    "html.format.contentUnformatted": "",
+    "html.format.unformatted": "",
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features",
+      "editor.formatOnSave": true,
+    },
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.validate.enable": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features",
+    },
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.locale": "en",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "js/ts.implicitProjectConfig.strictNullChecks": true,
+    "json.schemas": [],
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.quickSuggestions": {
+        "strings": true,
+      },
+      "editor.suggest.insertMode": "replace",
+    },
+    "npm.scriptExplorerAction": "run",
+    "php.validate.run": "onType",
+    "prettier.endOfLine": "auto",
+    "python.analysis.extraPaths": [],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.autoComplete.extraPaths": [],
+    "python.formatting.provider": "yapf",
+    "python.linting.lintOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "pylint",
+    "python.linting.pylintEnabled": true,
+    "python.languageServer": "Pylance",
+    "python.formatting.yapfPath": "yapf",
+    "[python]": {
+      "editor.defaultFormatter": null,
+      "editor.formatOnSave": true,
+    },
+    "search.exclude": {
+      "**/.git": true,
+      "**/bin": true,
+      "**/dist": true,
+      "**/public": true,
+    },
+    "task.slowProviderWarning": false,
+    "terminal.integrated.env.windows": {},
+    "window.zoomLevel": 1,
+    "workbench.editorAssociations": {},
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "accessibility.signals.lineHasError": {
+      "sound": "off",
+    },
+    "accessibility.signals.lineHasWarning": {
+      "sound": "off",
+    },
+    "accessibility.signals.lineHasBreakpoint": {
+      "sound": "off",
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+      "sound": "off",
+    },
+    "accessibility.signals.terminalQuickFix": {
+      "sound": "off",
+    },
+    "accessibility.signals.diffLineInserted": {
+      "sound": "off",
+    },
+    "accessibility.signals.diffLineDeleted": {
+      "sound": "off",
+    },
+    "accessibility.signals.diffLineModified": {
+      "sound": "off",
+    },
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+    "js/ts.validate.enabled": true,
+  },
+}

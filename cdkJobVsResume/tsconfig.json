@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.nobuild.json",
+  "compilerOptions": {
+    "declaration": true,
+  }
+}

@@ -24,7 +24,12 @@ import archive from './__output__/archive.json'
 
 type GetFetchedSearchDataCycleParamsType = {
   engine: string
-  query: string
+  getParams: {
+    q: string
+    gl: string
+    cr: string
+    hl: string
+  }
   pageNumStart: string | number
   pagesNumToFetch: string | number
 }
@@ -52,7 +57,7 @@ const optionsDefault = {
 const getFetchedSearchDataCycleUnsafe: GetFetchedSearchDataCycleType = async (
   {
     engine,
-    query,
+    getParams,
     pageNumStart: pageNumStartIn,
     pagesNumToFetch: pagesNumToFetchIn,
   }: GetFetchedSearchDataCycleParamsType,
@@ -79,7 +84,7 @@ const getFetchedSearchDataCycleUnsafe: GetFetchedSearchDataCycleType = async (
     const getFetchedSearchDataParams: GetFetchedSearchDataParamsType = {
       dateString,
       engine,
-      query,
+      getParams,
       pageNumStart: pageCurrent,
     }
 
@@ -130,7 +135,12 @@ if (require.main === module) {
         description: 'fetch in cycle',
         params: {
           engine: 'google',
-          query: 'site:myworkdayjobs.com react node remote',
+          getParams: {
+            q: 'site:myworkdayjobs.com%20inurl:remote%20react%20node%20jobs', // ? inurl:remote
+            gl: 'us',
+            cr: 'countryUS',
+            hl: 'en',
+          },
           pageNumStart: 4,
           pagesNumToFetch: 3,
         },

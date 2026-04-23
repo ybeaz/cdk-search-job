@@ -23,7 +23,12 @@ import archive from '../__output__/archive_wd.json'
 type GetFetchedSearchDataParamsType = {
   dateString: string
   engine: string
-  query: string
+  getParams: {
+    q: string
+    gl: string
+    cr: string
+    hl: string
+  }
   pageNumStart: string | number
 }
 
@@ -48,7 +53,7 @@ const optionsDefault = {
  */
 
 const getFetchedSearchDataUnsafe: GetFetchedSearchDataType = async (
-  { dateString, engine, query, pageNumStart }: GetFetchedSearchDataParamsType,
+  { dateString, engine, getParams, pageNumStart }: GetFetchedSearchDataParamsType,
   options: GetFetchedSearchDataOptionsType = optionsDefault
 ): Promise<GetFetchedSearchDataResType> => {
   const filePath = join(__dirname, '..', '__output__', `${dateString}_wd.json`)
@@ -71,7 +76,10 @@ const getFetchedSearchDataUnsafe: GetFetchedSearchDataType = async (
 
   url.searchParams.set('api_key', SERPAPI_KEY)
   url.searchParams.set('engine', engine)
-  url.searchParams.set('q', query)
+
+  Object.entries(getParams).forEach(([key, value]: [string, string]) => {
+    url.searchParams.set(key, value)
+  })
   url.searchParams.set('start', String(pageNumStart))
 
   const res = await fetch(url.toString())
@@ -181,7 +189,12 @@ if (require.main === module) {
         params: {
           dateString, // : '2026-04-22-20-06-58',
           engine: 'google',
-          query: 'site:myworkdayjobs.com react node remote',
+          getParams: {
+            q: 'site:myworkdayjobs.com%20inurl:remote%20react%20node%20jobs', // ? inurl:remote
+            gl: 'us',
+            cr: 'countryUS',
+            hl: 'en',
+          },
           pageNumStart: 1,
         },
         options: {},

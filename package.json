@@ -112,7 +112,7 @@
     "xml-js": "^1.6.11",
     "yargs": "^17.7.2",
     "yourails_common": "^0.20.5",
-    "yourails_node": "^0.20.2",
+    "yourails_node": "^0.20.3",
     "zod": "^3.24.4"
   },
   "devDependencies": {

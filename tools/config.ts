@@ -8,14 +8,12 @@ export const copyArr = [
     dest: join(__dirname, '../', 'mcp-server-playwright-fork'),
   },
   {
-    src: join(
-      '/Users/admin/Dev/yourails-nestjs-server-4/cdkJobVsResume/getSearchedWorkdayDomains/getSearchedWorkdayDomains.ts'
-    ),
-    dest: join(
-      __dirname,
-      '../',
-      'cdkJobVsResume/getSearchedWorkdayDomains/getSearchedWorkdayDomains.ts'
-    ),
+    src: join('/Users/admin/Dev/yourails-nestjs-server-4/cdkJobVsResume/getFetchedSearchData'),
+    dest: join(__dirname, '../', 'cdkJobVsResume/getFetchedSearchData'),
+  },
+  {
+    src: join('/Users/admin/Dev/yourails-nestjs-server-4/cdkJobVsResume/getFetchedSearchDataCycle'),
+    dest: join(__dirname, '../', 'cdkJobVsResume/getFetchedSearchDataCycle'),
   },
 ]
 
